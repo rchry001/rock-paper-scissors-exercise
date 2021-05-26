@@ -67,4 +67,4 @@ elif (user_choice == "paper" and computer_choice == "scissors"):
 if (user_choice == computer_choice):
     print("Tie Game! Try Again")
 
-print("THIS IS THE END OF OUR GAME. PLEASE PLAY AGAIN.")
+print("THIS IS THE END OF OUR GAME. PLEASE COME AGAIN.")
