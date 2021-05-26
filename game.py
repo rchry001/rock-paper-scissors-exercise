@@ -1,5 +1,6 @@
 # game.py
-print("Rock, Paper, Scissors, Shoot!")
+print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
+
 
 import random
 
@@ -7,6 +8,7 @@ import random
 #print(10, 99, "My message", "another message")
 user_choice = input("Please choose one of 'rock', 'paper', 'scissors': ")
 #print("USER CHOICE:")
+print("Rock, Paper, Scissors, Shoot!")
 #print(user_choice)
 print("USER CHOICE: ", user_choice)
 # validate the input such that only if it is one of the expected values
