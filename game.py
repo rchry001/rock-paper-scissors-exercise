@@ -42,4 +42,27 @@ valid_options = ["rock", "paper", "scissors"]
 computer_choice = random.choice(["rock","paper","scissors"])
 print("COMPUTER CHOICE: ", computer_choice)
 
+#this is the if statement to simulate the event where rock beats scissor
+if (user_choice == "rock" and computer_choice == "scissors"):
+    print("Flawless Victory! Good Job!")
+elif (user_choice == "scissors" and computer_choice == "rock"):
+    print("Mhmm Computer wins..its okay...Try again!")
+
+#this is the if statement to simulate Paper beating Rock
+if (user_choice == "paper" and computer_choice == "rock"):
+    print("Flawless Victory! Good Job!")
+elif (user_choice == "rock" and computer_choice == "paper"):
+    print("Mhmm Computer wins..its okay...Try again!")
+
+#this is to simulate scissors beating paper
+if (user_choice == "scissors" and computer_choice == "paper"):
+    print("Flawless Victory! Good Job!")
+elif (user_choice == "paper" and computer_choice == "scissors"):
+    print("Mhmm Computer wins..its okay...Try again!")
+
+
+#this is the if statement to simulate a tie game
+if (user_choice == computer_choice):
+    print("Tie Game! Try Again")
+
 print("THIS IS THE END OF OUR GAME. PLEASE PLAY AGAIN.")
