@@ -1,6 +1,6 @@
 # game.py
 print("Welcome to my Rock-Paper-Scissors game...")
-print(f"'{USER_NAME}'")
+print(f'USER_NAME')
 
 
 import random
