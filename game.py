@@ -76,19 +76,19 @@ print("-----------------------------------------")
 if (user_choice == "rock" and computer_choice == "scissors"):
     print("Flawless Victory! Good Job!")
 elif (user_choice == "scissors" and computer_choice == "rock"):
-    print("Mhmm Computer wins..its okay...Try again!")
+    print("Mhmm Your Soul is Mine!")
 
 #this is the if statement to simulate Paper beating Rock
 if (user_choice == "paper" and computer_choice == "rock"):
     print("Flawless Victory! Good Job!")
 elif (user_choice == "rock" and computer_choice == "paper"):
-    print("Mhmm Computer wins..its okay...Try again!")
+    print("Mhmm Your Soul is Mine!")
 
 #this is to simulate scissors beating paper
 if (user_choice == "scissors" and computer_choice == "paper"):
     print("Flawless Victory! Good Job!")
 elif (user_choice == "paper" and computer_choice == "scissors"):
-    print("Mhmm Computer wins..its okay...Try again!")
+    print("Mhmm Your Soul is Mine!")
 
 
 #this is the if statement to simulate a tie game
