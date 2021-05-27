@@ -1,7 +1,23 @@
 # game.py
 print("Welcome to my Rock-Paper-Scissors game...")
-print(f'USER_NAME')
+print("-----------------------------------------")
 
+import os
+
+my_game_env = os.environ
+
+#print("------------")
+#print(type(my_game_env)) #> <class 'os._Environ'>
+#print(my_game_env)
+
+# can be converted to a dictionary:
+#print("------------")
+#print(type(dict(my_game_env))) #> <class 'dict'>
+
+# using the newer getter function (recommended):
+USER_NAME = os.getenv("USER_NAME", default="Rubinel")
+print(USER_NAME) #> SecretPassword123
+print("-----------------------------------------")
 
 import random
 
@@ -10,6 +26,7 @@ import random
 user_choice = input("Please choose one of 'rock', 'paper', 'scissors': ")
 #print("USER CHOICE:")
 print("Rock, Paper, Scissors, Shoot!")
+print("-----------------------------------------")
 #print(user_choice)
 print("USER CHOICE: ", user_choice)
 # validate the input such that only if it is one of the expected values
@@ -44,6 +61,7 @@ else:
 valid_options = ["rock", "paper", "scissors"]
 computer_choice = random.choice(["rock","paper","scissors"])
 print("COMPUTER CHOICE: ", computer_choice)
+print("-----------------------------------------")
 
 #this is the if statement to simulate the event where rock beats scissor
 if (user_choice == "rock" and computer_choice == "scissors"):
@@ -67,5 +85,6 @@ elif (user_choice == "paper" and computer_choice == "scissors"):
 #this is the if statement to simulate a tie game
 if (user_choice == computer_choice):
     print("Tie Game! Try Again")
+
 
 print("THIS IS THE END OF OUR GAME. PLEASE COME AGAIN.")
