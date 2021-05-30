@@ -1,31 +1,18 @@
 # game.py
-print("Welcome to my Rock-Paper-Scissors game - Mortal Kombat Edition!")
-print("-----------------------------------------")
+
 
 import os
 
 import dotenv
 
-
 dotenv.load_dotenv()
 
 PLAYER_NAME = os.getenv("PLAYER_NAME")
-print(PLAYER_NAME)
 
-#Lines 10 through 23 is the code i attempted to pull environment variable
-#my_game_env = os.environ
-
-#print("------------")
-#print(type(my_game_env)) #> <class 'os._Environ'>
-#print(my_game_env)
-
-# can be converted to a dictionary:
-#print("------------")
-#print(type(dict(my_game_env))) #> <class 'dict'>
-
-# using the newer getter function (recommended):
-#USER_NAME = os.getenv("USER_NAME", default="Rubinel")
-#print(USER_NAME) #> SecretPassword123
+#print (PLAYER_NAME)
+print ("-------------------")
+#print("Welcome", PLAYER_NAME, "to Rock, Paper, Scissors, Shoot!")
+print("Welcome, "+ PLAYER_NAME + ",  to my Rock, Paper, Scissors game - Mortal Kombat Edition!!")
 print("-----------------------------------------")
 
 import random
